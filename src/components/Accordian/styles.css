@@ -1,0 +1,91 @@
+/* Wrapper centers the whole accordion */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600&display=swap");
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* keeps items at the top */
+  flex-direction: column;
+  padding: 40px 0;
+  width: 100%;
+}
+
+/* Accordion container */
+.accordian {
+  width: 60%; /* adjust width as needed */
+  max-width: 700px;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Individual items */
+.item {
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.item:hover {
+  background: #f1f1f1;
+}
+
+/* Title row */
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Answer text */
+.answers p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* + Symbol */
+.title span {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.enabled-btn {
+  background-color: #00c853;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.disabled-btn {
+  background-color: #d50000;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.enabled-btn:hover {
+  background-color: #00a344;
+}
+
+.disabled-btn:hover {
+  background-color: #b30000;
+}
