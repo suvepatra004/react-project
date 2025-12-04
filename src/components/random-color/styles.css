@@ -1,0 +1,28 @@
+.color-btn {
+  padding: 12px 20px;
+  background: #1e1e1e;
+  color: #fff;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 8px;
+  transition: all 0.25s ease;
+  letter-spacing: 0.5px;
+
+  /* Button shadow for depth */
+  box-shadow: 0 4px 0 #111;
+}
+
+/* Hover effect — lighter + lift */
+.color-btn:hover {
+  background: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #000;
+}
+
+/* Click effect — press down */
+.color-btn:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 #000;
+}
