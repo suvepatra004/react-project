@@ -1,0 +1,33 @@
+.star-rating {
+  display: flex;
+  gap: 8px;
+  cursor: pointer;
+  margin: 40px;
+}
+
+.star {
+  transition: transform 0.25s ease, color 0.25s ease, filter 0.25s ease;
+}
+
+/* INACTIVE STAR */
+.star.inactive {
+  color: #d1d1d1;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.1));
+}
+
+/* ACTIVE STAR FILL */
+.star.active {
+  color: #ffc107; /* fallback */
+  background: linear-gradient(120deg, #ffd76b, #ffb400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  transform: scale(1.15);
+  filter: drop-shadow(0px 0px 6px rgba(255, 193, 7, 0.6));
+}
+
+/* HOVER STAR EFFECT */
+.star:hover {
+  transform: scale(1.25);
+  filter: drop-shadow(0px 0px 8px rgba(255, 215, 100, 0.85));
+}
