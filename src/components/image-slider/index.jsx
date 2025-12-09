@@ -10,6 +10,7 @@ export default function ImageSlider({ limit = 5, page = 1 }) {
 
   const url = "https://picsum.photos/v2/list"; // ✅ WORKING API
 
+  // Function to fetch images
   async function fetchImages(getUrl) {
     try {
       setLoading(true);
@@ -27,10 +28,12 @@ export default function ImageSlider({ limit = 5, page = 1 }) {
     }
   }
 
+  // Handler functions for previous button
   function handlePrevious() {
     setCurrentSlide(currentSlide === 0 ? images.length - 1 : currentSlide - 1);
   }
 
+  // Handler functions for next button
   function handleNext() {
     setCurrentSlide(currentSlide === images.length - 1 ? 0 : currentSlide + 1);
   }
